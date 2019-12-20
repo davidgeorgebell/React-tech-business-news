@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from './contexts/ThemeContext';
 
-import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
-  return <div className='App'>Hello</div>;
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  return (
+    <div className='App'>
+      <div className={darkMode ? 'dark-mode' : 'light-mode'}>
+        <Header setDarkMode={setDarkMode} darkMode={darkMode} />
+        <main>
+          <h1>The News</h1>
+        </main>
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
 export default App;
