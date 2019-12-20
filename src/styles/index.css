@@ -1,8 +1,11 @@
+html,
 body {
   margin: 0;
   font-family: 'Vollkorn', Palatino, Times;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
 }
 
 code {
