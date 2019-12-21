@@ -1,10 +1,15 @@
 import React from 'react';
 
+import '../styles/story.css';
+
 const Story = ({ headline }) => {
   return (
     <div className='story-container'>
-      <li key={headline.url}>
-        <p>{headline.source.name}</p>
+      <li key={headline.url} className='story-item'>
+        <p>
+          {headline.source.name}
+          <span>{headline.publishedAt}</span>
+        </p>
         <a
           href={headline.url}
           style={{ textDecoration: `none`, textColor: `inherit` }}>

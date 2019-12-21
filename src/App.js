@@ -4,6 +4,7 @@ import { ThemeContext } from './contexts/ThemeContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
+import Title from './components/Title';
 
 function App() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -11,8 +12,8 @@ function App() {
     <div className='App'>
       <div className={darkMode ? 'dark-mode' : 'light-mode'}>
         <Header setDarkMode={setDarkMode} darkMode={darkMode} />
+        <Title />
         <main>
-          <h1>The News</h1>
           <HomePage />
         </main>
         <Footer />

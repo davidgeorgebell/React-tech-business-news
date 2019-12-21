@@ -1,0 +1,10 @@
+.story-container {
+  padding-top: 10px;
+  border-top: 1px solid #ae945f;
+}
+.dark-mode .story-container {
+  border-top: 1px solid #ae945f;
+}
+.story-item {
+  list-style-type: none;
+}

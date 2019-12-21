@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+}
+.dark-mode h1 {
+  color: #efefef;
+}
+.title-container {
+  margin: 2rem;
+}

@@ -10,13 +10,17 @@ const HomePage = () => {
     getHeadlines().then((data) => setHeadlines(data));
   }, []);
 
-  return (
+  return headlines.length ? (
     <div>
       <ul>
         {headlines.map((headline) => (
           <Story headline={headline} key={headline.url} />
         ))}
       </ul>
+    </div>
+  ) : (
+    <div>
+      <h3>Loading...</h3>
     </div>
   );
 };
