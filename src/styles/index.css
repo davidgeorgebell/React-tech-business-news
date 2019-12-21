@@ -2,6 +2,8 @@ html,
 body {
   margin: 0;
   font-family: 'Vollkorn', Palatino, Times;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -33,9 +35,8 @@ code {
 
 main {
   padding: 0 1rem;
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: 560px;
-  height: 90vh;
 }
 
 h1 {
@@ -67,4 +68,24 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 4rem;
   line-height: 1.2;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }

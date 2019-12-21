@@ -8,6 +8,6 @@ export const topBusinessGB = `${baseUrl}top-headlines?country=gb&category=busine
 
 export const getHeadlines = async () => {
   const result = await axios.get(topBusinessGB).then(({ data }) => data);
-  console.log(result);
-  return result;
+  console.log(result.articles);
+  return result.articles;
 };

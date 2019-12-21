@@ -15,8 +15,8 @@ function App() {
           <h1>The News</h1>
           <HomePage />
         </main>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
