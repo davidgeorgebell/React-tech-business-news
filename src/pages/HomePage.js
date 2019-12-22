@@ -24,7 +24,7 @@ const HomePage = () => {
     </div>
   ) : (
     <div>
-      <h3>Loading...</h3>
+      <h3 style={{ marginLeft: '2rem' }}>Loading...</h3>
     </div>
   );
 };
