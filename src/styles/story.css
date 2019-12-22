@@ -8,3 +8,6 @@
 .story-item {
   list-style-type: none;
 }
+.story-title:hover {
+  color: #ae945faf;
+}
