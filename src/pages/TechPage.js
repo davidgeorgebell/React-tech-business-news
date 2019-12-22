@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 
-import { getHeadlines } from '../utils/newsApi';
+import { getTech } from '../utils/newsApi';
 import Story from '../components/Story';
 
 import '../styles/title.css';
 
-const HomePage = () => {
+const TechPage = () => {
   const [headlines, setHeadlines] = useState([]);
 
   useEffect(() => {
-    getHeadlines().then((data) => setHeadlines(data));
+    getTech().then((data) => setHeadlines(data));
   }, []);
 
   return headlines.length ? (
     <div>
-      <h1 className='title'>Business News UK</h1>
+      <h1 className='title'>Tech News UK</h1>
 
       <ul>
         {headlines.map((headline) => (
@@ -28,4 +28,4 @@ const HomePage = () => {
     </div>
   );
 };
-export default HomePage;
+export default TechPage;

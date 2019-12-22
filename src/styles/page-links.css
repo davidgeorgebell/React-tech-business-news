@@ -1,0 +1,17 @@
+.page-links-container {
+  margin: 2rem;
+}
+
+.page-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+li {
+  list-style: none;
+  margin-right: 1rem;
+}
+.page-link:hover {
+  color: #ae945faf;
+}

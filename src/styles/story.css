@@ -1,13 +1,20 @@
 .story-container {
   padding-top: 10px;
   border-top: 1px solid #ae945f;
+  margin: none;
+  padding: none;
 }
 .dark-mode .story-container {
   border-top: 1px solid #ae945f;
 }
+
 .story-item {
   list-style-type: none;
 }
 .story-title:hover {
   color: #ae945faf;
+}
+ul {
+  padding: none;
+  margin: none;
 }

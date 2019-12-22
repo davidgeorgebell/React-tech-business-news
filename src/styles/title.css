@@ -1,7 +1,8 @@
-h1 {
+.title {
   text-align: center;
+  margin: 2rem;
 }
-.dark-mode h1 {
+.dark-mode .title {
   color: #efefef;
 }
 .title-container {
