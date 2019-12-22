@@ -11,12 +11,12 @@ const PageLinks = () => {
         <ul className='page-links'>
           <li className='page-link'>
             <NavLink to='/' exact>
-              Business News
+              Business
             </NavLink>
           </li>
           <li className='page-link'>
             <NavLink to='/tech' exact>
-              Tech News
+              Tech
             </NavLink>
           </li>
         </ul>
